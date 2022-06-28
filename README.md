@@ -1,2 +1,2 @@
 # Arbys-Battleship-Bot
-A Battleship board game bot for Memeing aBout Arby's
+A Battleship board game bot for Memeing About Arby's
