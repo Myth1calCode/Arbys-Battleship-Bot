@@ -43,8 +43,8 @@ async def on_member_join(member):
     """
     await member.create_dm()
     await member.dm_channel.send(
-        f"Hi {member.name}, welcome to battle-ships server! Type '^play' to "
-        f"start a game"
+        f"Hi {member.name}, welcome to Memeing about Arby's! Type '^play' to "
+        f"start a game of Battleship."
     )
 
 
