@@ -1,2 +1,2 @@
 # Arbys-Battleship-Bot
-A Battleship board game bot for my friend's Discord server.
+A Battleship board game bot for Memeing aBout Arby's
