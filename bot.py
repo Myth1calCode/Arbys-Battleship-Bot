@@ -2,6 +2,21 @@ import discord
 from discord.ext import commands
 import bge
 import os
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def main():
+  return "Arby's Battleship Bot is currently online!"
+
+def run():
+  app.run(host="0.0.0.0", port=8000)
+
+def keep_alive():
+  server = Thread(target=run)
+  server.start()
 
 GAME = bge.start_game()
 TOKEN = os.getenv('TOKEN')
@@ -185,5 +200,5 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-
+keep_alive()
 bot.run(TOKEN)
