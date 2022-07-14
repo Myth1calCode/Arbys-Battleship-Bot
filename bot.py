@@ -27,10 +27,8 @@ async def on_ready():
     prints messages to console when bot is activated
     :return: None
     """
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
+    await bot.change_presence(activity=discord.Streaming(name='Battleship', url='https://www.twitch.tv/search?term=Battleship'))
+    print('Bot started successfully!')
 
 
 @bot.event
@@ -48,7 +46,7 @@ async def on_member_join(member):
     )
 
 
-@bot.command()
+@bot.command(name='play')
 async def start_game(ctx):
     """
     Waits for the start_game command and when this command is sent by a
